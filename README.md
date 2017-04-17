@@ -1,8 +1,7 @@
 
 # PIcamera_fadecandy
 Stream video to multiple screens made out of LED streeps
-
-## Credit: Maurin Donneaud maurin@datapaulette.org
+Credit: Maurin Donneaud maurin@datapaulette.org
 
 ### Hardware
  - [Raspbeary-PI 3](https://www.raspberrypi.org)
@@ -14,6 +13,7 @@ Stream video to multiple screens made out of LED streeps
  - Channel 2  TXTXWEYKYITTRRYF
  - Channel 3  TNFLPPXLBXELMHMT
 
+~~~~
 	-------------------------
 	|			|			|
 	| Channel 0 | Channel 1 |
@@ -24,3 +24,4 @@ Stream video to multiple screens made out of LED streeps
 	| Channel 2 | Channel 3 |
 	|			|			|
 	|			|			|
+~~~~
