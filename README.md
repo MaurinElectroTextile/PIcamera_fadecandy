@@ -15,13 +15,13 @@ Credit: Maurin Donneaud maurin@datapaulette.org
 
 ~~~~
 	-------------------------
-	|			|			|
+	|           |           |
 	| Channel 0 | Channel 1 |
-	|			|			|
-	|			|			|
+	|           |           |
+	|           |           |
 	-------------------------
-	|			|			|
+	|           |           |
 	| Channel 2 | Channel 3 |
-	|			|			|
-	|			|			|
+	|           |           |
+	|           |           |
 ~~~~
