@@ -24,4 +24,5 @@ Credit: Maurin Donneaud maurin@datapaulette.org
 	| Channel 2 | Channel 3 |
 	|           |           |
 	|           |           |
+	-------------------------
 ~~~~
