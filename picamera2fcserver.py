@@ -42,8 +42,9 @@ with picamera.PiCamera() as camera:
         with picamera.array.PiRGBArray(camera, size=(WIDTH, HEIGHT)) as stream:
 
             ###### AV GAUCHE  channel 0 -> TXTXWEYKYITTRRYF
-            stream.truncate(0)
             camera.zoom = (0, 0, 0.5, 0.5)
+            stream.seek(0) # Rewind the stream for reading
+            stream.truncate(0)
             camera.capture(stream, format='rgb', resize=(WIDTH, HEIGHT), use_video_port=True)
             frameAVG = stream.array
             frameAVG = frameAVG.tolist()
@@ -52,8 +53,9 @@ with picamera.PiCamera() as camera:
             client.put_pixels(newFrameAVG, channel=0)
             
             ###### AV DROITE channel 1 -> UEICYSNDBXIHAJEV
-            stream.truncate(0)
             camera.zoom = (0.5, 0, 0.5, 0.5)
+            stream.seek(0) # Rewind the stream for reading
+            stream.truncate(0)
             camera.capture(stream, format='rgb', resize=(WIDTH, HEIGHT), use_video_port=True)
             frameAVD = stream.array
             frameAVD = frameAVD.tolist()
@@ -62,8 +64,9 @@ with picamera.PiCamera() as camera:
             client.put_pixels(newFrameAVD, channel=1)
             
             ###### AR GAUCHE channel 2 -> TXTXWEYKYITTRRYF
-            stream.truncate(0)
             camera.zoom = (0, 0.5, 0.5, 0.5)
+            stream.seek(0) # Rewind the stream for reading
+            stream.truncate(0)
             camera.capture(stream, format='rgb', resize=(WIDTH, HEIGHT), use_video_port=True)
             frameARG = stream.array
             frameARG = frameARG.tolist()
@@ -72,8 +75,9 @@ with picamera.PiCamera() as camera:
             client.put_pixels(newFrameARG, channel=2)
             
             ###### AR DROITE channel 3 -> TZXTQOUKWKVZDDUN
-            stream.truncate(0)
             camera.zoom = (0.5, 0.5, 0.5, 0.5)
+            stream.seek(0) # Rewind the stream for reading
+            stream.truncate(0)
             camera.capture(stream, format='rgb', resize=(WIDTH, HEIGHT), use_video_port=True)
             frameARD = stream.array
             frameARD = frameARD.tolist()
