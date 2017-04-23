@@ -50,7 +50,7 @@ with picamera.PiCamera() as camera:
             ###### AV DROITE channel 1 -> UEICYSNDBXIHAJEV
             camera.zoom = (0.5, 0, 0.5, 0.5)
             stream.seek(0) # Rewind the stream for reading
-            stream.truncate(0            camera.zoom = (0.5, 0, 0.5, 0.5)
+            stream.truncate(0)
             frameAVD = stream.array
             frameAVD = frameAVD.tolist()
             newFrameAVD = np.reshape(frameAVD, (numLEDs, 3))
