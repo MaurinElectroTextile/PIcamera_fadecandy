@@ -26,3 +26,6 @@
 	|           |           |
 	-------------------------
 ~~~~
+
+### TODO :
+ - Fixing bug : https://groups.google.com/forum/#!topic/fadecandy/-xz-Ij6x0Wo
