@@ -18,10 +18,9 @@ if client.can_connect():
 else:
     print('WARNING: could not connect to %s' % ADDRESS)
 
-WIDTH = 40
-HEIGHT = 8
+WIDTH = 80
+HEIGHT = 16
 numLEDs = WIDTH*HEIGHT
-
 
 #initialize the camera and grab a reference to the raw camera capture
 with picamera.PiCamera() as camera:
@@ -37,7 +36,6 @@ with picamera.PiCamera() as camera:
         with picamera.array.PiRGBArray(camera, size=(WIDTH, HEIGHT)) as stream:
 
             ###### AV GAUCHE  channel 0 -> TXTXWEYKYITTRRYF
-
             camera.zoom = (0, 0, 0.5, 0.5)
             stream.seek(0) # Rewind the stream for reading
             stream.truncate(0)
