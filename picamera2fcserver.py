@@ -18,7 +18,7 @@ if client.can_connect():
 else:
     print('WARNING: could not connect to %s' % ADDRESS)
 
-WIDTH = 40 
+WIDTH = 40
 HEIGHT = 8
 numLEDs = WIDTH*HEIGHT
 
