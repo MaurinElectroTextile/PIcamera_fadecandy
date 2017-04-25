@@ -28,4 +28,4 @@
 ~~~~
 
 ### TODO :
- - Fixing bug : https://groups.google.com/forum/#!topic/fadecandy/-xz-Ij6x0Wo
+ - BugFix : https://groups.google.com/forum/#!topic/fadecandy/-xz-Ij6x0Wo
