@@ -7,8 +7,13 @@
  - [Raspbeary-PI 3](https://www.raspberrypi.org)
  - [Fadecandy](https://github.com/scanlime/fadecandy)
 
+### Clone this repository
+ - git clone git@github.com:MaurinElectroTextile/PIcamera_fadecandy.git
+ - git submodule init
+ - git submodule update
+
 ### Compiling Fadecandy serveur
- - cd fadecandy/servercd
+ - cd fadecandy/server
  - make submodules
  - make
 
