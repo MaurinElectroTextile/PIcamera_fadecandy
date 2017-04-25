@@ -7,6 +7,11 @@
  - [Raspbeary-PI 3](https://www.raspberrypi.org)
  - [Fadecandy](https://github.com/scanlime/fadecandy)
 
+### Compiling Fadecandy serveur
+ - cd fadecandy/servercd
+ - make submodules
+ - make
+
 ### Fadecandy IDs :
  - Channel 0  TZXTQOUKWKVZDDUN
  - Channel 1  UEICYSNDBXIHAJEV
