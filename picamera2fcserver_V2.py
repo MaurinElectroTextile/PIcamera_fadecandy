@@ -1,7 +1,8 @@
 #/usr/bin/env python
 
-# Scale to 80/59
-# croped to 40/8
+# Camera resolution is set to 320x240
+# then the image is resize to 80x16
+# then the zoom fonction ste it to 40x8
 # config file : /usr/local/bin/fcserver.json
 
 import opc
@@ -35,7 +36,7 @@ with picamera.PiCamera() as camera:
     while True:
         with picamera.array.PiRGBArray(camera, size=(WIDTH, HEIGHT)) as stream:
 
-            ###### AV GAUCHE  channel 0 -> TXTXWEYKYITTRRYF
+            ###### AV GAUCHE  channel 0 -> TZXTQOUKWKVZDDUN
             camera.zoom = (0, 0, 0.5, 0.5)
             stream.seek(0) # Rewind the stream for reading
             stream.truncate(0)
@@ -65,7 +66,7 @@ with picamera.PiCamera() as camera:
             newFrameARG = map(tuple, newFrameARG)
             client.put_pixels(newFrameARG, channel=2)
 
-            ###### AR DROITE channel 3 -> TZXTQOUKWKVZDDUN
+            ###### AR DROITE channel 3 -> TNFLPPXLBXELMHMT
             camera.zoom = (0.5, 0.5, 0.5, 0.5)
             stream.seek(0) # Rewind the stream for reading
             stream.truncate(0)
